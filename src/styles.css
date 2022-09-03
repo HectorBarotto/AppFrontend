@@ -1,0 +1,205 @@
+/*---regla para el cuerpo del documento*/
+body {
+    background-color: teal;
+    color: white;
+  }
+/*  HEADER */
+/*----posición fija para la primera linea del header*/
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+/*icono puntero al pasar el mouse sobre el nombre*/
+#my-name{ 
+  cursor: not-allowed;
+}
+/*----Enlace a redes sociales*/
+.social-bar {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  float: right;
+  flex-wrap: wrap;
+}
+.icon {
+  background-color: lightblue;
+  text-decoration: none;
+  padding: .7rem;
+  display: flex;
+  transition: all .5s;
+}
+.icon-facebook {
+  color: blue; /* #2E406E */
+}
+.icon-instagram {
+  color: red; /*#3F60A5*/
+}
+.icon-twitter {
+  color: #7085b1; /*#339DC5*/
+}
+.icon-linkedin2{
+  color: #358baa;
+}
+/*pseudo clases para social bar*/
+.icon:first-child {
+  border-radius: 1rem 0 0 1rem;
+}
+.icon:last-child{
+  border-radius: 0 1rem 1rem 0;
+}
+.icon:hover {
+	padding-right: 3rem;
+	border-radius: 1rem 1rem 1rem 1rem;
+	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+/*fin social bar*/
+/*botón login*/
+.btn{
+  background-color: lightblue;
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-left: 5px;
+  display: flex;
+  float: left;
+  width: 100px;
+}
+/*baner*/
+div#first-card{
+  margin: 0px 10px 0px 10px;
+  z-index: -1; /*muestra en segundo plano el banner*/
+}
+/*especificaciones extras par mostrar la imágen del banner*/
+img.img-fluid{ 
+  max-width: 2500px;
+  min-width: 500px;
+  max-height: 300px;
+}
+#banner-edit{
+  text-align:right; 
+  margin: 100px 10px -50px 10px;
+}
+/*fin banner*/
+/*acerca de - article-semántico - reglas extras a la sección*/
+div > img.rounded-circle{ /*define ubicación para imágen perfil*/
+  margin-left: 2%;
+  margin-top: -80px;
+  background-color: transparent;
+}
+/*efecto zoom de la imagen*/
+.img-perfil{
+  width: 87px;
+  height: 121px;
+  transition: 0.5s;
+  object-fit: cover;
+}
+.img-perfil:hover{
+  transform: scale(1.2);
+}
+/*fin zoom imágen de perfil*/
+/*como se muestran iconos agregar-editar-borrar en todas las secciones*/
+i.bi{ 
+  font-size:24px;
+  color:white;
+  margin: 10px;
+}
+/*apariencia de las secciones/articulos*/
+.div-Seccion{ 
+  border: solid thin black;
+  border-radius: 10px;
+  margin: 1%;
+}
+/* contenedor table responsive*/
+#contenedor-Info { 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 10px;
+}
+/*table 2 columnas responsive sin el uso de bootstrap5*/
+#contenedor-Info > div { 
+  width: 50%;
+  float: left;
+  display: flex;
+}
+/*imágenes en artículos/secciones*/
+.small-img{
+  margin: 10px 10px 10px 0px;
+  min-width: 80px;
+  max-width: 130;
+  min-height: 80px;
+  max-height: 100px;
+}
+div#info-contact > span { 
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 10px;
+}
+.enlace-estilo{
+  color: black;
+}
+/* márgen de fila*/
+div.row{ 
+  margin-top: 10px;
+  margin-left: 0px;
+}
+/*fin acerca de*/
+/*Experiencia*/
+
+/*fin experiencia*/
+
+/*Habilidades*/
+.add-del-skills{
+  float: left;
+  display: flex;
+}
+@keyframes growProgressBar {
+  0%, 33% { --pgPercentage: 0; }
+  100% { --pgPercentage: var(--value); }
+}
+/*
+@property --pgPercentage {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 0;
+}
+*/
+div[role="progressbar"] {
+  --size: 5rem;
+  /**
+  --fg: #369;
+  --bg: #def;
+  **/
+  --fg: green;
+  --bg: lightgray;
+  --pgPercentage: var(--value);
+  animation: growProgressBar 3s 1 forwards;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: 
+    radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+    ;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--fg);
+}
+
+div[role="progressbar"]::before {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) '%';
+}
+
+div.skills{
+  border: solid thin black;
+  border-radius:10px;
+  margin:3px;
+  max-width: 90%;
+}
+/*fín habilidades*/
+
