@@ -16,330 +16,336 @@
     <link rel="stylesheet" href="social-bar/font.css"> <!-- Archivo estilos social bar-->
 </head>
 <body>
-    <header>
-        <div class="row fixed"> <!-- primera linea con: logo argprog /nombre /redes sociales /btn login-->
-            <div class="col-sm-7" title="Si lo puedes imaginar, lo puedes programar">
-                <img src="../images/argprog.png" alt="logo argentina programa" align="left" width="238" height="49" />
-                <h2 id="my-name" align="center" style="color: black"><i>Héctor M. Barotto</i></h2>
-            </div>
-            <div class="col-sm-4">
-                <div class="social-bar">
-                    <a href="https://www.facebook.com/" class="icon icon-facebook" target="_blank" title="Facebook"></a>
-                    <a href="https://www.instagram.com/" class="icon icon-instagram" target="_blank" title="Instagram"></a>
-                    <a href="https://twitter.com/?lang=es" class="icon icon-twitter" target="_blank" title="Twitter"></a>
-                    <a href="https://ar.linkedin.com/" class="icon icon-linkedin2" target="_blank" title="LinkedIn"></a>
-                </div>
-            </div>
-            <div class="col-sm-1">
-              <button type="button" class="btn btn-outline-primary" title="data access">Login</button>
-            </div>
+  <header>
+    <nav class="navbar bg-secondary navbar-dark"> <!--navegación dentro de la página-->
+      <div class="container-fluid">
+        <div class="navbar-brand" title="Si lo puedes imaginar, lo puedes programar">
+          <img src="../images/argprog.png" alt="logo argentina programa" align="left" width="238" height="49" />
         </div>
-        <!-- banner-->
-        <div id="banner-edit">
-          <a href="#" >
+        <div class="social-bar">
+          <a href="https://www.facebook.com/" class="icon icon-facebook" target="_blank" title="Facebook"></a>
+          <a href="https://www.instagram.com/" class="icon icon-instagram" target="_blank" title="Instagram"></a>
+          <a href="https://twitter.com/?lang=es" class="icon icon-twitter" target="_blank" title="Twitter"></a>
+          <a href="https://ar.linkedin.com/" class="icon icon-linkedin2" target="_blank" title="LinkedIn"></a>
+        </div>
+        <button type="button" class="btn btn-outline-primary" title="data access">Login</button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#acerca-de">1. Acerca de</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experiencia">2. Experiencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#educacion">3. Educación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#habilidades">4. Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">5. Proyectos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- banner-->
+    <div id="banner-edit">
+      <a href="#" >
+        <i class="bi bi-pencil-square" title="editar"></i>
+      </a>
+    </div>
+    <div class="card mat-card" id="first-card">
+      <img class="img-fluid" src="../images/junin.png" alt="Parque Natural -JUNIN(B)"/>
+    </div>
+  </header>
+
+  <section class="seccion" id="acerca-de"> <!-- AcercaDe -->
+    <div title="image farm">
+      <img src="../images/perfil.png" class="rounded-circle img-perfil" alt="mi perfil"/>
+      <a href="#">
+        <i class="bi bi-pencil-square" title="editar"></i>
+      </a>
+    </div>
+    <div id="contenedor-Info">
+      <div>
+        <h3>Héctor M. Barotto</h3>
+        <ul type="circle">
+            <li>Informático</li>
+            <li>Técnico Impositivo Contable</li>
+        </ul>
+      </div>
+      <div>
+          <img class="small-img" src="../images/inst20.png" alt="Intituto ISFDyT Nº20S">
+          <h5>Instituto Superior de Formación <br> Docente y Técnica nº20 JUNIN(B)</h5>
+      </div>
+    </div>
+    <div id="info-contact">
+      <span>JUNIN(Pcia.BsAs-Argentina) </span>
+      <span><a class="enlace-estilo" href="#">Información de contacto</a></span>
+    </div>
+
+    <div class="seccion"> <!-- Info Acerca de -->
+      <div class="row">
+        <div class="col-sm-11">
+          <h3>Acerca de</h3>
+          <div><p>Técnico impositivo-contable con desarrollos en c#, Java, MySQL</p></div>
+        </div>
+        <div class="col-sm-1">
+          <a href="#">
             <i class="bi bi-pencil-square" title="editar"></i>
           </a>
         </div>
-        <div class="card mat-card" id="first-card">
-          <img class="img-fluid" src="../images/junin.png" alt="Parque Natural -JUNIN(B)"/>
-        </div>
-    </header>
-    <section> <!-- AcercaDe -->
-        <article> <!-- Info data-->
-          <div class="div-Seccion" >
-            <div title="image farm">
-              <img src="../images/perfil.png" class="rounded-circle img-perfil" alt="mi perfil"/>
-              <a href="#">
-                <i class="bi bi-pencil-square" title="editar"></i>
-              </a>
-            </div>
-            <div id="contenedor-Info">
-              <div>
-                <h3>Héctor M. Barotto</h3>
-                <ul type="circle">
-                    <li>Informático</li>
-                    <li>Técnico Impositivo Contable</li>
-                </ul>
-              </div>
-              <div>
-                  <img class="small-img" src="../images/inst20.png" alt="Intituto ISFDyT Nº20S">
-                  <h5>Instituto Superior de Formación <br> Docente y Técnica nº20 JUNIN(B)</h5>
-              </div>
-            </div>
-            <div id="info-contact">
-              <span>JUNIN(Pcia.BsAs-Argentina) </span>
-              <span><a class="enlace-estilo" href="#">Información de contacto</a></span>
-            </div>
-            <!-- opciones desactivadas
-            <div id="btn-info">
-                <button type="button" class="btn btn-outline-primary btn-info">Tengo interés en</button>
-                <button type="button" class="btn btn-outline-primary btn-info">Añadir Sección</button>
-                <button type="button" class="btn btn-outline-primary btn-info">Más</button>
-            </div>
-            -->
-          </div>
-    
-          <div class="div-Seccion"> <!-- Info Acerca de-->
-            <div class="row">
-              <div class="col-sm-11">
-                <h3>Acerca de</h3>
-                <div><p>Técnico impositivo-contable con desarrollos en c#, Java, MySQL</p></div>
-              </div>
-              <div class="col-sm-1">
-                <a href="#">
-                  <i class="bi bi-pencil-square" title="editar"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-    
-        </article>
-        <article> <!-- Experiencia-->
-          <div class="div-Seccion" >
-            <div class="row">
-              <div class="col-sm-11">
-                <h3>Experiencia</h3>
-              </div>
-              <div class="col-sm-1">
-                <a href="#">
-                  <i class="bi bi-plus-square" title="agregar"></i>
-                </a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-3">
-                <img class="small-img" src="../images/desktop_development.png" alt="Desktop applications development">
-              </div>
-              <div class="col-sm-8">
-                <h3>Desktop Application Developer</h3>
-                <p>2005 - actualidad <br> Desarrollo independiente de aplicaciones para gestión comercial </p>
-              </div>
-              <div class="col-sm-1">
-                <a href="#">
-                  <i class="bi bi-pencil-square" title="editar"></i>
-                </a>
-                <a href="#">
-                  <i class="bi bi-trash" title="eliminar"></i>
-                </a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-3">
-                <img class="small-img" src="../images/web_developer.png" alt="web_developer">
-              </div>
-              <div class="col-sm-8">
-                <h3>Full Stack Developer Jr. -future</h3>
-                <p>Actualmente haciendo los primeros pasos en el desarrollo web </p>
-              </div>
-              <div class="col-sm-1">
-                <a href="#">
-                  <i class="bi bi-pencil-square" title="editar"></i>
-                </a>
-                <a href="#">
-                  <i class="bi bi-trash" title="eliminar"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article> <!-- Educación -->
-          <div class="div-Seccion" >
-            <div class="row">
-              <div class="col-sm-11">
-                <h3>Educación</h3>
-              </div>
-              <div class="col-sm-1">
-                <a href="#">
-                  <i class="bi bi-plus-square" title="agregar"></i>
-                </a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-3">
-                <img class="small-img" src="../images/argprog_logo.png" alt="Full Stack Web Jr.">
-              </div>
-              <div class="col-sm-8">
-                <h3>Full Stack Web Jr.</h3>
-                <p>Cursando #Yo Programo </p>
-              </div>
-              <div class="col-sm-1">
-                <a href="#">
-                  <i class="bi bi-pencil-square" title="editar"></i>
-                </a>
-                <a href="#">
-                  <i class="bi bi-trash" title="eliminar"></i>
-                </a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-3">
-                <img class="small-img" src="../images/111mil.png" alt="Desktop applications development">
-              </div>
-              <div class="col-sm-8">
-                <h3>Analista de Conocimiento-Dimensión Programador</h3>
-                <p>2019 - Curso certificado con desarrollos en Java y MySQL </p>
-              </div>
-              <div class="col-sm-1">
-                <a href="#">
-                  <i class="bi bi-pencil-square" title="editar"></i>
-                </a>
-                <a href="#">
-                  <i class="bi bi-trash" title="eliminar"></i>
-                </a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-3">
-                <img class="small-img" src="../images/inst20.png" alt="Instituto nº20 Junín">
-              </div>
-              <div class="col-sm-8">
-                <h3>Técnico Superior Impositivo Contable</h3>
-                <p>1980 - 1982 Estudio de nivel terciario sobre finanzas,
-                  <br>costos, administración e impuestos </p>
-              </div>
-              <div class="col-sm-1">
-                <a href="#">
-                  <i class="bi bi-pencil-square" title="editar"></i>
-                </a>
-                <a href="#">
-                  <i class="bi bi-trash" title="eliminar"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article> <!-- Habilidades -->
-          <div class="div-Seccion" >
-            <div class="row">
-                <div class="col-sm-11">
-                  <h3>Habilidades</h3>
-                </div>
-                <div class="col-sm-1">
-                  <a href="#">
-                    <i class="bi bi-plus-square" title="agregar"></i>
-                  </a>
-                </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6 col-md-4 col-lg-3 skills">
-                <div class="add-del-skills">
-                  <p>Capacidad en brindar soluciones</p>
-                  <a href="#">
-                    <i class="bi bi-pencil-square" title="editar"></i>
-                  </a>
-                  <a href="#">
-                    <i class="bi bi-trash" title="eliminar"></i>
-                  </a>
-                </div>
-                <div role="progressbar" aria-valuenow="85" aria-valuemin="0" 
-                  aria-valuemax="100" style="--value:85">
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-3 skills">
-                <div class="add-del-skills">
-                  <p>Elección y uso de herramientas informáticas </p>
-                  <a href="#">
-                    <i class="bi bi-pencil-square" title="editar"></i>
-                  </a>
-                  <a href="#">
-                    <i class="bi bi-trash" title="eliminar"></i>
-                  </a>
-                </div>
-                <div role="progressbar" aria-valuenow="90" aria-valuemin="0" 
-                  aria-valuemax="100" style="--value:90">
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-3 skills">
-                <div class="add-del-skills">
-                  <p>Liderazgo en equipos de trabajo </p>
-                  <a href="#">
-                    <i class="bi bi-pencil-square" title="editar"></i>
-                  </a>
-                  <a href="#">
-                    <i class="bi bi-trash" title="eliminar"></i>
-                  </a>
-                </div>
-                <div role="progressbar" aria-valuenow="70" aria-valuemin="0" 
-                  aria-valuemax="100" style="--value:70">
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-3 skills">
-                <div class="add-del-skills">
-                  <p>Responsabilidad ante compromisos contraídos </p>
-                  <a href="#">
-                    <i class="bi bi-pencil-square" title="editar"></i>
-                  </a>
-                  <a href="#">
-                    <i class="bi bi-trash" title="eliminar"></i>
-                  </a>
-                </div>
-                <div role="progressbar" aria-valuenow="99" aria-valuemin="0" 
-                  aria-valuemax="100" style="--value:99">
-                </div>
-              </div>
-            </div>
-        </div>
-      </article>
-      <article> <!-- Proyectos-->
-        <div class="div-Seccion" >
-          <div class="row">
-            <div class="col-sm-11">
-              <h3>Proyectos</h3>
-            </div>
-            <div class="col-sm-1">
-              <a href="#">
-                <i class="bi bi-plus-square" title="agregar"></i>
-              </a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-3">
-              <img class="small-img" src="../images/developer.png" alt="Desarrollo web">
-            </div>
-            <div class="col-sm-8">
-              <h3>Full Stack Web Jr.</h3>
-              <span>Argentina Programa -curso: #Yo Programo3 -desarrollo de portfolio web [2022]</span>
-              <span><a class="enlace-estilo" href="https://github.com/HectorBarotto" target="_blank">GitHub: portfolio</a></span>
-            </div>
-            <div class="col-sm-1">
-              <a href="#">
-                <i class="bi bi-pencil-square" title="editar"></i>
-              </a>
-              <a href="#">
-                <i class="bi bi-trash" title="eliminar"></i>
-              </a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-3">
-              <img class="small-img" src="../images/java.png" alt="Java app-desktop">
-            </div>
-            <div class="col-sm-8">
-              <h3>Java - MySql</h3>
-              <p>Desarrollo completo de gestión comercial [2019-2021] </p>
-            </div>
-            <div class="col-sm-1">
-              <a href="#">
-                <i class="bi bi-pencil-square" title="editar"></i>
-              </a>
-              <a href="#">
-                <i class="bi bi-trash" title="eliminar"></i>
-              </a>
-            </div>
-          </div>
-          </div>
-        </div>
-      </article>
-    </section>
-    <aside> <!-- sección de contenido dinamico indirecto relacionado al documento-->
-    </aside>
-    <footer> <!-- pie de página -->
-    </footer>
+      </div>
+    </div>
+  </section>
 
-    <!-- Bootstrap CDN a través de jsDelivr -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" 
-        crossorigin= "anonymous">
-    </script>
+  <section class="seccion" id="experiencia"> <!-- Experiencia-->
+    <div class="row">
+      <div class="col-sm-11">
+        <h3>Experiencia</h3>
+      </div>
+      <div class="col-sm-1">
+        <a href="#">
+          <i class="bi bi-plus-square" title="agregar"></i>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <img class="small-img" src="../images/desktop_development.png" alt="Desktop applications development">
+      </div>
+      <div class="col-sm-8">
+        <h3>Desktop Application Developer</h3>
+        <p>2005 - actualidad <br> Desarrollo independiente de aplicaciones para gestión comercial </p>
+      </div>
+      <div class="col-sm-1">
+        <a href="#">
+          <i class="bi bi-pencil-square" title="editar"></i>
+        </a>
+        <a href="#">
+          <i class="bi bi-trash" title="eliminar"></i>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <img class="small-img" src="../images/web_developer.png" alt="web_developer">
+      </div>
+      <div class="col-sm-8">
+        <h3>Full Stack Developer Jr. -future</h3>
+        <p>Actualmente haciendo los primeros pasos en el desarrollo web </p>
+      </div>
+      <div class="col-sm-1">
+        <a href="#">
+          <i class="bi bi-pencil-square" title="editar"></i>
+        </a>
+        <a href="#">
+          <i class="bi bi-trash" title="eliminar"></i>
+        </a>
+      </div>
+    </div>
+  </section> 
+
+  <section class="seccion" id="educacion"> <!-- Educación -->
+    <div class="row">
+      <div class="col-sm-11">
+        <h3>Educación</h3>
+      </div>
+      <div class="col-sm-1">
+        <a href="#">
+          <i class="bi bi-plus-square" title="agregar"></i>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <img class="small-img" src="../images/argprog_logo.png" alt="Full Stack Web Jr.">
+      </div>
+      <div class="col-sm-8">
+        <h3>Full Stack Web Jr.</h3>
+        <p>Cursando #Yo Programo </p>
+      </div>
+      <div class="col-sm-1">
+        <a href="#">
+          <i class="bi bi-pencil-square" title="editar"></i>
+        </a>
+        <a href="#">
+          <i class="bi bi-trash" title="eliminar"></i>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <img class="small-img" src="../images/111mil.png" alt="Desktop applications development">
+      </div>
+      <div class="col-sm-8">
+        <h3>Analista de Conocimiento-Dimensión Programador</h3>
+        <p>2019 - Curso certificado con desarrollos en Java y MySQL </p>
+      </div>
+      <div class="col-sm-1">
+        <a href="#">
+          <i class="bi bi-pencil-square" title="editar"></i>
+        </a>
+        <a href="#">
+          <i class="bi bi-trash" title="eliminar"></i>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <img class="small-img" src="../images/inst20.png" alt="Instituto nº20 Junín">
+      </div>
+      <div class="col-sm-8">
+        <h3>Técnico Superior Impositivo Contable</h3>
+        <p>1980 - 1982 Estudio de nivel terciario sobre finanzas,
+          <br>costos, administración e impuestos </p>
+      </div>
+      <div class="col-sm-1">
+        <a href="#">
+          <i class="bi bi-pencil-square" title="editar"></i>
+        </a>
+        <a href="#">
+          <i class="bi bi-trash" title="eliminar"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion" id="habilidades"> <!-- Habilidades -->
+    <div class="row">
+        <div class="col-sm-11">
+          <h3>Habilidades</h3>
+        </div>
+        <div class="col-sm-1">
+          <a href="#">
+            <i class="bi bi-plus-square" title="agregar"></i>
+          </a>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-4 col-lg-3 skills">
+        <div class="add-del-skills">
+          <p>Capacidad en brindar soluciones</p>
+          <a href="#">
+            <i class="bi bi-pencil-square" title="editar"></i>
+          </a>
+          <a href="#">
+            <i class="bi bi-trash" title="eliminar"></i>
+          </a>
+        </div>
+        <div role="progressbar" aria-valuenow="85" aria-valuemin="0"
+          aria-valuemax="100" style="--value:85">
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 skills">
+        <div class="add-del-skills">
+          <p>Elección y uso de herramientas informáticas </p>
+          <a href="#">
+            <i class="bi bi-pencil-square" title="editar"></i>
+          </a>
+          <a href="#">
+            <i class="bi bi-trash" title="eliminar"></i>
+          </a>
+        </div>
+        <div role="progressbar" aria-valuenow="90" aria-valuemin="0"
+          aria-valuemax="100" style="--value:90">
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 skills">
+        <div class="add-del-skills">
+          <p>Liderazgo en equipos de trabajo </p>
+          <a href="#">
+            <i class="bi bi-pencil-square" title="editar"></i>
+          </a>
+          <a href="#">
+            <i class="bi bi-trash" title="eliminar"></i>
+          </a>
+        </div>
+        <div role="progressbar" aria-valuenow="70" aria-valuemin="0"
+          aria-valuemax="100" style="--value:70">
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 skills">
+        <div class="add-del-skills">
+          <p>Responsabilidad ante compromisos contraídos </p>
+          <a href="#">
+            <i class="bi bi-pencil-square" title="editar"></i>
+          </a>
+          <a href="#">
+            <i class="bi bi-trash" title="eliminar"></i>
+          </a>
+        </div>
+        <div role="progressbar" aria-valuenow="99" aria-valuemin="0"
+          aria-valuemax="100" style="--value:99">
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <section class="seccion" id="proyectos"> <!-- Proyectos-->
+    <div class="row">
+      <div class="col-sm-11">
+        <h3>Proyectos</h3>
+      </div>
+      <div class="col-sm-1">
+        <a href="#">
+          <i class="bi bi-plus-square" title="agregar"></i>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <img class="small-img" src="../images/developer.png" alt="Desarrollo web">
+      </div>
+      <div class="col-sm-8">
+        <h3>Full Stack Web Jr.</h3>
+        <span>Argentina Programa -curso: #Yo Programo3 -desarrollo de portfolio web [2022]</span>
+        <span><a class="enlace-estilo" href="https://github.com/HectorBarotto" target="_blank">GitHub: portfolio</a></span>
+      </div>
+      <div class="col-sm-1">
+        <a href="#">
+          <i class="bi bi-pencil-square" title="editar"></i>
+        </a>
+        <a href="#">
+          <i class="bi bi-trash" title="eliminar"></i>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <img class="small-img" src="../images/java.png" alt="Java app-desktop">
+      </div>
+      <div class="col-sm-8">
+        <h3>Java - MySql</h3>
+        <p>Desarrollo completo de gestión comercial [2019-2021] </p>
+      </div>
+      <div class="col-sm-1">
+        <a href="#">
+          <i class="bi bi-pencil-square" title="editar"></i>
+        </a>
+        <a href="#">
+          <i class="bi bi-trash" title="eliminar"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <aside> <!-- sección de contenido dinamico indirecto relacionado al documento-->
+  </aside>
+
+  <footer> <!-- pie de página -->
+    <a href="#" align="right" style="color:black;"><h4>Ir al inicio</h4></a>
+  </footer>
+
+  <!-- Bootstrap CDN a través de jsDelivr -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" 
+      crossorigin= "anonymous">
+  </script>
 </body>
 </html>
